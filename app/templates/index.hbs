@@ -1,6 +1,6 @@
 <ul class="blog-list">
   {{#each model as |blog|}}
-    <li>
+    <li role="link" {{action "goToBlog" blog}}>
       <div class="blog-meta">
         <img src={{blog.avatar}} alt={{blog.author}}>
         <div class="blog-header">
@@ -18,3 +18,5 @@
     </li>
   {{/each}}
 </ul>
+
+{{outlet}}
