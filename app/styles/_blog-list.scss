@@ -7,9 +7,15 @@
   li {
     border-radius: .25rem;
     box-shadow: 0 0 .3rem $transparent-black;
+    cursor: pointer;
     display: block;
     margin: 2rem;
     padding: 1rem;
+    transition: box-shadow .3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 .3rem $transparent-blue;
+    }
   }
 
   .blog-meta {
