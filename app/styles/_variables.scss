@@ -1,3 +1,7 @@
+$dark-grey: #333;
+$grey: #aaa;
+$transparent-black: rgba(0,0,0,.3);
+
 @mixin header-font {
   font-family: 'Didot 16 A', 'Didot 16 B';
   font-weight: 300;
