@@ -1,0 +1,16 @@
+<ul>
+  {{#each model as |blog|}}
+    <li>
+      <div class="blog-meta">
+        <img src="{{blog.avatar}}" alt="{{blog.author}}" />
+        <div class="blog-header">
+          <h2>{{blog.title}}</h2>
+          <h3>{{blog.author}} — {{blog.date}}</h3>
+        </div>
+      </div>
+      <p>
+        {{blog.content}}
+      </p>
+    </li>
+  {{/each}}
+</ul>
