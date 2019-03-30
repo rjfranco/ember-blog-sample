@@ -1,0 +1,9 @@
+@mixin header-font {
+  font-family: 'Didot 16 A', 'Didot 16 B';
+  font-weight: 300;
+}
+
+@mixin content-font {
+  font-family: 'Gotham A', 'Gotham B';
+  font-weight: 400;
+}
