@@ -2,14 +2,18 @@
   {{#each model as |blog|}}
     <li>
       <div class="blog-meta">
-        <img src="{{blog.avatar}}" alt="{{blog.author}}" />
+        <img src={{blog.avatar}} alt={{blog.author}}>
         <div class="blog-header">
           <h2>{{blog.title}}</h2>
           <h3>{{blog.author}} — {{blog.displayDate}}</h3>
         </div>
       </div>
       <p>
-        {{blog.content}}
+        {{line-clamp
+          lines=2
+          interactive=false
+          text=blog.content
+        }}
       </p>
     </li>
   {{/each}}
