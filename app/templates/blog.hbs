@@ -6,7 +6,9 @@
       <h3>{{model.author}} <span>|</span> {{model.displayDate}}</h3>
     </div>
   </div>
-  <div class="content">
-    {{model.content}}
-  </div>
+  {{#each paragraphs as |paragraph|}}
+    <p>
+      {{paragraph}}
+    </p>
+  {{/each}}
 </div>
