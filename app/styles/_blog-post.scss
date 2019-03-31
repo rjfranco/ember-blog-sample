@@ -6,6 +6,11 @@
   padding: 2rem;
   transition: box-shadow .3s ease-in-out;
 
+  @include mobile {
+    margin: 2rem 1.5rem;
+    padding: 1.5rem;
+  }
+
   .blog-meta {
     display: flex;
   }
@@ -20,12 +25,23 @@
     border-radius: 3rem;
     height: 6rem;
     width: 6rem;
+
+    @include mobile {
+      border-radius: 1.5rem;
+      height: 3rem;
+      width: 3rem;
+    }
   }
 
   h2 {
     @include header-font;
     font-size: 2rem;
     margin: 0 0 0 1rem;
+
+    @include mobile {
+      font-size: 1.3rem;
+      margin-bottom: .25rem;
+    }
   }
 
   h3 {
@@ -36,6 +52,10 @@
     span {
       color: $grey;
     }
+
+    @include mobile {
+      font-size: 1rem;
+    }
   }
 
   p {
@@ -43,6 +63,10 @@
     font-size: 1.2rem;
     line-height: 1.4;
     margin: 1.5rem 0 0;
+
+    @include mobile {
+      font-size: 1.2rem;
+    }
 
     &:first-of-type:first-letter {
       float: left;
