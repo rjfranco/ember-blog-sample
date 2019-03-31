@@ -1,13 +1,13 @@
 .blog-post {
   border-radius: .25rem;
   box-shadow: 0 0 .3rem $transparent-black;
-  margin: 3rem auto;
+  margin: 2rem 1.5rem;
   max-width: 60rem;
   padding: 2rem;
   transition: box-shadow .3s ease-in-out;
 
   @include mobile {
-    margin: 2rem 1.5rem;
+    margin: 1rem 1.5rem;
     padding: 1.5rem;
   }
 

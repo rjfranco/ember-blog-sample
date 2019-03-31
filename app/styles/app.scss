@@ -7,3 +7,8 @@
 @import 'header';
 @import 'blog-list';
 @import 'blog-post';
+
+main {
+  display: flex;
+  justify-content: center;
+}
