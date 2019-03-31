@@ -2,6 +2,11 @@ header {
   margin: 2rem auto 1rem;
   text-align: center;
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   h1 {
     @include header-font;
     font-size: 4rem;
