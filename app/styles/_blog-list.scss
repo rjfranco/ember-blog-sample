@@ -16,22 +16,46 @@
     &:hover {
       box-shadow: 0 0 .3rem $transparent-blue;
     }
+
+    @include mobile {
+      margin: 1.5rem;
+    }
   }
 
   .blog-meta {
     display: flex;
   }
 
+  .blog-header {
+    @include mobile {
+      max-width: calc(100% - 4rem);
+    }
+  }
+
   h2 {
     @include header-font;
     margin: .2rem 0 0 .75rem;
     text-transform: capitalize;
+
+    @include mobile {
+      font-size: 1.25rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 
   h3 {
     font-size: 1rem;
     font-weight: normal;
     margin: .25rem 0 0 .75rem;
+
+    @include mobile {
+      font-size: .9rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
     span {
       color: $grey;
@@ -42,6 +66,11 @@
     border-radius: 1.75rem;
     height: 3.5rem;
     width: 3.5rem;
+
+    @include mobile {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 
   p {
