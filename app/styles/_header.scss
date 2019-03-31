@@ -11,5 +11,9 @@ header {
     @include header-font;
     font-size: 4rem;
     margin: 0;
+
+    @include mobile {
+      font-size: 3rem;
+    }
   }
 }
