@@ -36,8 +36,7 @@ export default Route.extend({
   setupBlogRecords() {
     return new Promise((resolve) => {
       this.setupDB().then((db) => {
-        const dbRequestPromise = db.getAllFromIndex('blogs', 'id');
-        return dbRequestPromise.then((entries) => {
+        return db.getAllFromIndex('blogs', 'id').then((entries) => {
           if (!entries.length) {
             entries = this.generateBlogEntries(db);
           }
