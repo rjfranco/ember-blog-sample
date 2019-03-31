@@ -1,8 +1,8 @@
 .blog-post {
   border-radius: .25rem;
   box-shadow: 0 0 .3rem $transparent-black;
-  display: block;
-  margin: 3rem;
+  margin: 3rem auto;
+  max-width: 60rem;
   padding: 2rem;
   transition: box-shadow .3s ease-in-out;
 
