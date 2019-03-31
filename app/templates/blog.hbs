@@ -1,1 +1,12 @@
-{{outlet}}
+<div class="blog-post">
+  <div class="blog-meta">
+    <img src={{model.avatar}} alt={{model.author}}>
+    <div class="blog-header">
+      <h2>{{model.title}}</h2>
+      <h3>{{model.author}} <span>|</span> {{model.displayDate}}</h3>
+    </div>
+  </div>
+  <div class="content">
+    {{model.content}}
+  </div>
+</div>
